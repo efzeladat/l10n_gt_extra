@@ -5,7 +5,6 @@
 # que le agregue los quetzales y centavos.
 #
 
-import logging
 def num_a_letras(num, completo=True):
     en_letras = {
         '0': 'cero',
@@ -55,7 +54,7 @@ def num_a_letras(num, completo=True):
         '7xx': 'setecientos',
         '8xx': 'ochocientos',
         '9xx': 'novecientos',
-        '1xxx': 'mil',
+        '1xxx': 'un mil',
         'xxxxxx': 'mil',
         '1xxxxxx': 'un millón',
         'x:x': 'millones'
@@ -112,7 +111,7 @@ def num_a_letras(num, completo=True):
     if decimal == 0:
         letras = '%s exactos' % num_en_letras
     else:
-        letras = '%s con %s centavos' % (num_en_letras, decimal)
+        letras = '%s con %s/100' % (num_en_letras, decimal)
 
     return letras
 

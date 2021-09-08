@@ -8,8 +8,12 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="type">form</field>
             <field name="arch" type="xml">
-                <field name="lang" position="before">
-                    <field name="vat" string="NIT"></field>
+                <field name="website" position="after">
+                    <field name="pequenio_contribuyente"></field>
+                </field>
+                <field name="vat" position="after">
+                    <field name="no_validar_nit"></field>
+                    <field name="cui"></field>
                 </field>
             </field>
         </record>
@@ -20,7 +24,7 @@
             <field name="inherit_id" ref="base.view_res_partner_filter"/>
             <field name="type">search</field>
             <field name="arch" type="xml">
-                <field name="name" position="before">
+                <field name="name" position="after">
                     <field name="vat" string="NIT" select="1"></field>
                 </field>
             </field>
