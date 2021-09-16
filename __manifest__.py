@@ -10,7 +10,7 @@
     'depends': ['l10n_gt', 'account_tax_python', 'product'],
     'data': [
         'data/l10n_gt_extra_base.xml',
-        'views/account_view.xml',
+        # 'views/account_view.xml',
         'views/res_partner_view.xml',
         'views/product_views.xml',
         # 'views/report.xml',
@@ -22,7 +22,7 @@
         # 'views/reporte_diario.xml',
         # 'views/reporte_mayor.xml',
         'views/l10n_gt_extra_view.xml',
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
     ],
     'demo': [],
     'installable': True,
